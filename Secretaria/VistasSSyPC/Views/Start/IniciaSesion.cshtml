@@ -1,0 +1,96 @@
+﻿@model VistasSSyPC.Models.Usuario
+@{
+    //ViewBag.Title = "IniciaSesion";
+    
+}
+<head>
+    <title> IniciaSesion</title>
+<link rel="stylesheet" href="~/Content/MisEstilos/IniciaSesion.css"/>
+
+    </head>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Login fallido,verificar los datos.");
+   
+  <table width="100%">
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="40%" id="formulario-rec">
+                    <h4><b>Acceso al Sistema</b></h4>
+                    <table width="40%">
+                        <tr>
+                            <td colspan="2" style="font-size:12px">
+                                <b>Usuario:</b>
+                                <div class="editor-field" style="width:58%">
+                                     @Html.TextBoxFor(model => model.Nombre)
+                                     @Html.ValidationMessage("usuario")
+                                </div>
+                            </td>
+                        </tr>
+                        
+                         <tr>
+                            <td colspan="2" style="font-size:12px">
+                                <b>Cargo:</b>
+                                <div class="editor-field" style="width:58%">
+                                      @Html.TextBoxFor(model => model.Usuario1)
+                                      @Html.ValidationMessage("cargo")
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="font-size:12px">
+                                <b>Contraseña:</b>
+                                <div class="editor-field" style="width:58%">
+                                       @Html.PasswordFor(model => model.Password)
+                                       @Html.ValidationMessage("contraseña")
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="58%">
+                                <button style="width:60px" type="submit" class="btn btn-primary btn-sm"><span class="fa fa-sign-in"></span> Aceptar</button>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        </table>
+                </td>
+              <td width="10%">&nbsp;</td>
+            <td width="33%">
+                <table width="100%" class="container" >
+                    <tr id="info-Encabezado">
+                        <td><h5><b>Aplicacion Web - Sistema para el control <br />y distribucion de alimentos</b></h5></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="message-info container" id="info_IniciaSesion" >
+                                <p align="justify" id="info-Inicia">
+                                    Con esta aplicacion informatica se lleva un control administrativo para la seccion del almacenamiento  del area de cocina, asi como para el racionamiento de los propios alimentos  que van dirigidos a las  diferentes corporaciones.
+                                </p>
+                                <img src="~/Imagenes/IniciaSesion/fondo.png" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="icon-pric">
+                <img src="~/Imagenes/IniciaSesion/Imagen-Principal-de-la-SSyPC2.png" />
+                </div>
+            </td>
+            <td width="4%">&nbsp;</td>
+        </tr>
+                </table>
+}
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

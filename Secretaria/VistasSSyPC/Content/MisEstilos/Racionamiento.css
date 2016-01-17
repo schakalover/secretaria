@@ -1,0 +1,31 @@
+﻿body {
+}
+
+#fondoHeader {
+    position:relative;
+    width:100%;
+    height:200px;
+    margin:1px 1px 1px 1px;
+    border:5px solid black;
+}
+
+#TituloRacionamiento{
+    position:absolute;
+    top:-10px;
+    left:20%;
+    
+
+}
+#TituloRacionamiento > h1 {
+    font-size:150px;
+}
+#imgracionamiento {
+    position:absolute;
+    top:-3px;
+    left:1px;
+    width:200px;
+    height:200px;
+}
+#men {
+    font-size:17px;
+}

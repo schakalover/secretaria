@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="40bb4847063a4356b7b1c275fde0903b" Name="Diagrama1">
+        <EntityTypeShape EntityType="BD_SSyPCModel.Almacen" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Areas" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Cat_Marca" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Cat_Modelo" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Cat_Producto" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Corporacion" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Ingredientes" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Ingredientes_UnidadAlimenticia" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Menu" Width="1.5" PointX="1.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Platillos" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Tbl_Inventario" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.UnidadAlimenticia" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Unidades_de__medida" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BD_SSyPCModel.Usuario" Width="1.5" PointX="6" PointY="10.5" IsExpanded="true" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Almacen_Corporacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Tbl_Inventario_Almacen" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Usuario_Areas" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Cat_Producto_Cat_Marca" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Cat_Producto_Cat_Modelo" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Cat_Producto_Unidades_de__medida" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Ingredientes_Cat_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Tbl_Inventario_Cat_Producto1" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Usuario_Corporacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.FK_Ingredientes_UnidadAlimenticia" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.Tiene" ManuallyRouted="false" />
+        <AssociationConnector Association="BD_SSyPCModel.UnidadAlimenticia_Platillos" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
