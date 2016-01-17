@@ -37,7 +37,6 @@ namespace Secretaria.Models
         public DbSet<Ingredientes> Ingredientes { get; set; }
         public DbSet<Menus> Menus { get; set; }
         public DbSet<Platillos> Platillos { get; set; }
-        public DbSet<sysdiagrams> sysdiagrams { get; set; }
         public DbSet<Tbl_Inventario> Tbl_Inventario { get; set; }
         public DbSet<Unidades_Alimenticias> Unidades_Alimenticias { get; set; }
         public DbSet<Unidades_de__medidas> Unidades_de__medidas { get; set; }
